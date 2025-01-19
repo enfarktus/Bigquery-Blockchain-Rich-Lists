@@ -5,7 +5,7 @@ Rich address lists can be easily created with bigquery:
 
 1- ******* BİTCOİN *******
 **************************
-"
+
 WITH double_entry_book AS (
    -- debits
    SELECT array_to_string(inputs.addresses, ",") AS address, inputs.type, -inputs.value AS value
@@ -20,7 +20,7 @@ FROM double_entry_book
 GROUP BY address, type
 ORDER BY balance DESC
 LIMIT 1000000
-"
+
 ******************************
 
 2- ******* DOGE *******
@@ -107,3 +107,14 @@ LIMIT 30000
 donation:
 0xe47BBeAc8F268d7126082D5574B6f027f95AF5FB 
 3FerqQF5DVY1tPCEV7nXENoqxuVHGLjRh3
+
+
+
+
+
+
+
+
+
+
+
